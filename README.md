@@ -2,7 +2,7 @@
 
 ## Create SQL Table(s)
 ```
-CREATE TABLE board (
+CREATE TABLE simple_board (
   post_id int(11) unsigned NOT NULL auto_increment, 
   name varchar(20) NOT NULL, 
   email varchar(30), 
