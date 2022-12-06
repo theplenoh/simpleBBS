@@ -1,6 +1,6 @@
 <?php
 require_once "common.php";
-require_once $path."db_connect";
+require_once $path."db_connect.php";
 
 $post_id = $_GET['post_id'];
 
@@ -22,7 +22,7 @@ $row = mysqli_fetch_array($result);
 <h1><?=$board_title?></h1>
 <main>
     <h2>Compose</h2>
-    <form action="<?=$path?>edit.php?post_id=<?=$post_id?>" method="post">
+    <form action="<?=$path?>update.php?post_id=<?=$post_id?>" method="post">
     <dl>
         <dt><label for="name">Name</label></dt>
         <dd>
