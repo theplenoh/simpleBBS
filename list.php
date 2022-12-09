@@ -2,8 +2,8 @@
 require_once "common.php";
 require_once $path."db_connect.php";
 
-$page_size = 5;
-$page_list_size = 5;
+$page_size = 10;
+$page_list_size = 10;
 
 if (!isset($_GET['no']) || $_GET['no'] < 0)
     $no = 0;
